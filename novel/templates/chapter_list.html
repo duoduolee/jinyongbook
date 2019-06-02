@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>the jinyongbook django website by duoduolee</title>
+</head>
+<body>
+
+<h2>星辰变</h2>
+{% for novel in Novels %}
+    <a href="/chapter/{{novel.id}} "><li>{{ novel.title }}</li>
+
+{% endfor %}
+
+
+</body>
+</html>
